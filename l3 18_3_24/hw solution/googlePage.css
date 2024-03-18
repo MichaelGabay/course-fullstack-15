@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.google-box {
+    margin: 0 auto;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.75);
+    min-height: 500px;
+}
+
+
+.title {
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+.wrapper-input {
+    background: white;
+    max-width: 600px;
+    padding: 4px;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.wrapper-input i {
+    margin: 10px;
+}
+
+.search-input {
+    min-width: 470px;
+    border: none;
+    outline: none;
+    min-height: 24px;
+    font-size: 18px;
+}
