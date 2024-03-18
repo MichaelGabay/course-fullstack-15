@@ -48,6 +48,60 @@
     /*  נתינת שני ערכים -> ערך ראשון ציר הווי ערך שני ציר האיקס*/
     /* margin: 40px 80px; */
 
-    /* מרכוז אלמנט */
+    /* מרכוז אלמנט לציר האיקס */
     margin: 0 auto;
+
+    /* מרחק מבפנים */
+    padding: 90px;
+}
+
+.bt {
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    border-radius: 40px;
+
+    /* סוג המצביע */
+    cursor: pointer;
+    background: rgb(15, 15, 237);
+    color: white;
+    border-color: white;
+
+    font-size: 12px;
+    font-family: cursive;
+    /* מהירות שינוי הסגנון במצבים שונים */
+    transition: 2000ms;
+}
+
+/* שליטה במצב בו העכבר על מרחף על הלמנט */
+.bt:hover {
+    background: rgb(193, 41, 41);
+    color: orange;
+}
+
+
+
+.box, .inner-box {
+    height: 200px;
+}
+
+p {
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+td, th {
+    /* נתנו מסגרות על כל המשבצות */
+    border: 1px solid black;
+    padding: 6px;
+}
+
+table {
+    /* נפתרנו מהרווחים שבין כל משבצת למשבצת */
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+tr:nth-child(2n){
+    background: rgba(101, 100, 100, 0.426);
 }

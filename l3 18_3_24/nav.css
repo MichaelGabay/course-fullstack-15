@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.854);
+}
+
+nav{
+    color: white;
+    padding: 20px;
+    margin-bottom: 3000px;
+}
+
+nav a{
+    /* לקיחת צבע בירושה */
+    color: inherit;
+    margin: 0 4px;
+    text-decoration: none;
+}
