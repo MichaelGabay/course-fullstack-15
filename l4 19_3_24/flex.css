@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-parent {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    /* defults */
+    /* align-items: stretch; */
+
+    gap: 20px;
+
+    border: 2px solid black;
+    padding: 4px;
+    min-height: 500px;
+
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+.yb {
+    /* האם האלמט יוכל להתכווץ למינימום קונטנט וכמה יתכווץ */
+    /* flex-shrink: 0;  */
+    /* במידה ויש רוחב ריק כמה אתה רוצה להגדיל את האלמנט על חשבון הרוחב  */
+    /* flex-grow: 1; */
+    /* קובע את מיקום האלמנט בפלקס- הדיפולט לכל הפלקס אייטמס הוא 0 */
+    /* order: -1; */
+
+    /* שינוי התנהגות ספציפית לאחד מהפלקס אייטמס */
+    /* align-self: flex-end; */
+
+    /* העלמת אלמנט מהמסך בלי לשמור על המקום שלו */
+    /* display: none; */
+
+    /* העלמת אלמנט עם שמירה על המקום שהוא נמצא בו */
+    /* visibility: hidden; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}

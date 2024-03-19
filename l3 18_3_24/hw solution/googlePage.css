@@ -25,6 +25,7 @@ body {
     padding: 4px;
     border-radius: 24px;
     margin: 0 auto;
+    
 }
 
 .wrapper-input i {
@@ -37,4 +38,6 @@ body {
     outline: none;
     min-height: 24px;
     font-size: 18px;
+    direction: rtl;
 }
+
