@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header nav {
+    background: rgba(0, 0, 0, 0.893);
+    padding: 16px 12px;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav .links {
+    display: flex;
+    gap: 8px;
+}

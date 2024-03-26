@@ -1,5 +1,5 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -23,3 +23,11 @@ body {
     top: -38px;
     z-index: -1;
 }
+
+
+.b2 {
+    margin-top: 12px;
+    border: 12px solid black;
+    padding: 4px;
+}
+
