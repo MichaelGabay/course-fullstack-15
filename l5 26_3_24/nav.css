@@ -27,6 +27,43 @@ header nav .links {
 
 }
 
+.fa-bars {
+    visibility: hidden;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    position: absolute;
+    right: 24px;
+    top: 28px;
+
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+}
+.row {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.row .box {
+    max-width: 340px;
+    border: 4px solid black;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.row .box .img {
+    width: 100%;
+}
+
+.row .box .title{
+    text-align: center;
+}
 @media (max-width:768px) {
     header nav .links {
         display: none;
@@ -35,8 +72,12 @@ header nav .links {
     header nav {
         justify-content: center;
     }
-    .logo{
+
+    .logo {
         width: 42px;
     }
 
+    .fa-bars {
+        visibility: visible;
+    }
 }
