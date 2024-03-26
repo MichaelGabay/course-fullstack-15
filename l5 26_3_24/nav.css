@@ -10,6 +10,8 @@ header nav {
     background: rgba(0, 0, 0, 0.893);
     padding: 16px 12px;
     color: white;
+    display: flex;
+    gap: 14px;
 }
 
 header nav a {
@@ -21,4 +23,20 @@ header nav a {
 header nav .links {
     display: flex;
     gap: 8px;
+    align-items: center;
+
+}
+
+@media (max-width:768px) {
+    header nav .links {
+        display: none;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+    .logo{
+        width: 42px;
+    }
+
 }
