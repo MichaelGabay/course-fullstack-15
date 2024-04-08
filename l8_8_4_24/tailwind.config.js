@@ -4,10 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        pinkButton:"#f84071"
+        pinkButton:"#f84071",
+        softGray:"rgb(245, 245, 245)"
+      },
+      animation:{
+        'ping-one-time':'ping 1s linear'
       }
     }
   },
   plugins: [],
+  darkMode:"class"
 }
 
