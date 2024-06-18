@@ -1,16 +1,18 @@
 {
-  "name": "l6_01_4_24",
+  "name": "l10-18_6_24",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "firstNodeScript.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "node firstNodeScript.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^3.4.3"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21"
   }
 }
