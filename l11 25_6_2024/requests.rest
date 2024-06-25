@@ -1,0 +1,8 @@
+### say 
+get http://localhost:3000/
+
+### say so
+post http://localhost:3000/say/so
+
+###
+post http://localhost:3000/product/addProduct
