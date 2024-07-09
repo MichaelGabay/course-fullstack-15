@@ -1,0 +1,13 @@
+{
+  "name": "l12-9_7_24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node fs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

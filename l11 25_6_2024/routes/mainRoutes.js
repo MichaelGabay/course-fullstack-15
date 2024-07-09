@@ -8,6 +8,7 @@ const productRouter = require("./productRoutes")
 
 
 router.get("/test", (req, res) => {
+        
     return res.send(req.query.x+req.query.y)
 
     // req -> info anout this request
