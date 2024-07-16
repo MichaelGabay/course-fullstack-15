@@ -1,14 +1,18 @@
-const fs = require("fs");
+const fs = require("fs")
 
+const fsPromises = fs.promises;
 
-function doSomthing(isOk) {
-    return new Promise((resolve, reject) => {
-        if (isOk) {
-            resolve("all done");
-        }
-        else reject("there was an error")
-    })
-}
+const data = await fsPromises.readFile("./text.txt", "utf-8");
+console.log(data)
+
+// function doSomthing(isOk) {
+//     return new Promise((resolve, reject) => {
+//         if (isOk) {
+//             resolve("all done");
+//         }
+//         else reject("there was an error")
+//     })
+// }
 
 // doSomthing(false).then((msg)=>{console.log(msg)}).catch((m)=>{console.log(m)})
 
@@ -17,17 +21,18 @@ function doSomthing(isOk) {
 //         .then(data => console.log(data)))
 //     .catch((err) => { console.log(err) });
 
+
 async function getProducts() {
     try {
         const resp = await fetch("https://makeup-api.herokuapp.com/api/v1000/products.json?brand=maybelline");
         const data = await resp.json()
         console.log(data)
     } catch (error) {
-        console.log("my error",error)
+        console.log("my error", error)
     }
 }
 
-getProducts()
+// getProducts()
 
 
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8]
