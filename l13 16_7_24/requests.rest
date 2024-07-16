@@ -1,9 +1,10 @@
 ### say 
-get http://localhost:3000/test?x=2&y=9&name=30
+post http://localhost:3000/user/register
+Content-Type: application/json
 
-
-### say so
-post http://localhost:3000/say/so
-
-###
-post http://localhost:3000/product/addProduct
+{
+    "name":"michael",
+    "age":20,
+    "email":"michael@gmail.com",
+    "password":"12345"
+}

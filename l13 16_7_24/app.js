@@ -7,9 +7,11 @@ require("dotenv").config()
 const mainRouter=require("./routes/mainRoutes")
 // יצירת אינסטנס חדש לסרבר שירוץ על המחשב שלי
 const app = express();
+// התחברות למסד נתונים
+require("./db/connnect")
 
-
-
+// איפשור גישה לגוף הבקשה - למידע שנשלח כבאדי
+app.use(express.json())
 
 // קישור הסרבר למסלולים שנכתבו בקובץ main routes
 app.use(mainRouter)
