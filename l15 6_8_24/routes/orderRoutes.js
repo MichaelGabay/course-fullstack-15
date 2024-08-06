@@ -1,0 +1,15 @@
+const router=require("express").Router();
+
+// ליצור
+// הוספת הזמנה
+// מחיקת הזמנה
+// עריכת הזמנה
+// קבלת כל ההזמנוץ של היוזר שמבקש
+
+// כל אלה שלמעלה חייבים בדיקה שהמשתמש מחובר👆
+
+
+// קבלת כל ההזמנות
+// קבלת כל המשתמשים
+// כל אלה שלמעלה חייבים בדיקה שהמשתמש שמחובר הוא אדמין👆
+module.exports=router
