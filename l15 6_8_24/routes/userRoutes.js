@@ -4,8 +4,6 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken");
 const {auth,authAdmin} = require("../middlewares/auth");
 
-
-
 router.post("/register", async (req, res) => {
     try {
         req.body.password = await bcrypt.hash(req.body.password, 10)

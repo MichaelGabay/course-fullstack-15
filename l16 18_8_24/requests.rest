@@ -1,0 +1,23 @@
+### register 
+post http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "name":"john",
+    "age":20,
+    "email":"jon@gmail.com",
+    "password":"12345"
+}
+### login 
+post http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"jon@gmail.com",
+    "password":"12345"
+}
+
+
+### myInfo
+get http://localhost:3000/user/myInfo
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTg4Zjc0YmIxMzU4NjJjMjFlNGJlMiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIyOTQwMTcyLCJleHAiOjE3MjU1MzIxNzJ9.gK8aaBm5dl9ykQ6dnnGoM7qa53jkh8nCN_L24hWgOK4; Path=/; HttpOnly
