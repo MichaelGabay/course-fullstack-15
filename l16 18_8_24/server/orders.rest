@@ -1,0 +1,32 @@
+# get url
+# Cookie: 
+
+### הוספת הזמנה
+post http://localhost:3000/order/add
+Content-Type: application/json
+Cookie:  access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzFiYTdmMzMyZGRhYjQ1ZmM2MjM2ZSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIzOTcyMjcxLCJleHAiOjE3MjY1NjQyNzF9.ZCu8vrv-MKHiogn5ibYAyIfSw2QGxmIrEpjANdOwNAw; Path=/; HttpOnly; Secure; SameSite=None
+
+{
+"totalPrice":100,
+"numberOfItems":30,
+"shippingAddress":"zabutinski 20 bney bnerak",
+"cashierName":"kobi"
+}
+
+### מחיקת הזמנה
+delete http://localhost:3000/order/remove?id=66c1bbfed0e17e5f3347318c
+Cookie:  access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzFiYTdmMzMyZGRhYjQ1ZmM2MjM2ZSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIzOTcyMjcxLCJleHAiOjE3MjY1NjQyNzF9.ZCu8vrv-MKHiogn5ibYAyIfSw2QGxmIrEpjANdOwNAw; Path=/; HttpOnly; Secure; SameSite=None
+
+### עדכון הזמנה
+put http://localhost:3000/order/update?id=66c1da15beba3534f3d7434b
+Content-Type: application/json
+Cookie:  access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzFiYTdmMzMyZGRhYjQ1ZmM2MjM2ZSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIzOTcyMjcxLCJleHAiOjE3MjY1NjQyNzF9.ZCu8vrv-MKHiogn5ibYAyIfSw2QGxmIrEpjANdOwNAw; Path=/; HttpOnly; Secure; SameSite=None
+
+{
+   "totalPrice": 0
+}
+
+
+### 
+get http://localhost:3000/order/getAll?limit=10&skip=1
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzFiYTdmMzMyZGRhYjQ1ZmM2MjM2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMzk4MTI5MSwiZXhwIjoxNzI2NTczMjkxfQ.x52UvPZygW5oPsADAIF29isuoBicEOPeJPLH8NHkqTE; Path=/; HttpOnly; Secure; SameSite=None
